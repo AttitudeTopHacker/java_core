@@ -17,11 +17,7 @@ public class Greatest_Common_divisor {
     }
 
     private static int GCDChecker2(int x, int y) {
-        int min;
-        if (x > y)
-            min = y;
-        else
-            min = x;
+        int min = Math.min(x, y);
         for (int i = min; i > 0; i--) {
             if (x % i == 0 && y % i == 0) {
                 min = i;

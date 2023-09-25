@@ -17,11 +17,10 @@ public class majority_element {
         for (int i = 0; i < N; i++) {
             arr[i] = scanner.nextInt();
         }
-        Majort(arr, N);
+        Majors(arr, N);
     }
 
-    private static void Majort(int[] arr, int n) {
-
+    private static void Majors(int[] arr, int n) {
         int maxCount = 0;
         int index = -1;
         for (int i = 0; i < n; i++) {
