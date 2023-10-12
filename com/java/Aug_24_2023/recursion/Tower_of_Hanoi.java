@@ -1,4 +1,4 @@
-package com.java.Aug_24_2023;
+package com.java.Aug_24_2023.recursion;
 
 import java.util.Scanner;
 

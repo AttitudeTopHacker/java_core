@@ -9,35 +9,34 @@ package com.java.Aug_24_2023;
 
 public class nextpermution {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int[] arr = {1, 3, 2};
         int k = arr.length - 2;
-        for (int i = arr.length - 1; i > 0; i--) {
-            if (arr[i] <= arr[i - 1]) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] < arr[i - 1]) {
                 k--;
             } else {
                 break;
             }
         }
         if (k == -1) {
-            revers(0, arr.length-1, arr);
-            for (int i = 0; i <arr.length; i++) {
-                System.out.println(arr[i]);
+            revers(0, arr.length - 1, arr);
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(arr[i] + " ");
             }
             return;
         }
-        for (int i = arr.length-1; i >0 ; i--) {
-            if (arr[i]>arr[k+1]){
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[k] < arr[i]) {
                 int tmp = arr[i];
                 arr[i] = arr[k];
                 arr[k] = tmp;
-                break;
             }
         }
-        revers(k+1, arr.length-1,arr);
-        for (int i = 0; i <arr.length ; i++) {
-            System.out.print(arr[i] +" ");
+        revers(k + 1, arr.length - 1, arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-return;
+
     }
 
     private static void revers(int i, int length, int[] arr) {

@@ -19,12 +19,11 @@ public class inverse_Recursive {
         }
 
         int[] br = new int[arr.length];
-       inverseArray_recursive(arr, 0,br);
+        inverseArray_recursive(arr, 0,br);
 
     }
 
     private static void inverseArray_recursive(int[] arr, int i ,int[] br) {
-
 
         if (i >= arr.length) {
             System.out.println(Arrays.toString(br));

@@ -28,7 +28,6 @@ public class Maximum_circular_sum {
             if (sum < 0) {
                 sum = 0;
             }
-
         }
 
         return sum;
