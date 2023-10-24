@@ -119,7 +119,7 @@ public class linked_list {
         listUser.middleLinkedList(1, 24);
         listUser.display();
         System.out.println();
-        listUser.Delete(8);
+        listUser.Delete(3);
         listUser.display();
         System.out.println();
 
