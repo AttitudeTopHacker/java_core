@@ -17,9 +17,9 @@ public class candiesMOM {
 
             int x = scanner.nextInt();
             int n = scanner.nextInt();
-            int tmp=x%n;
+            int tmp = x % n;
 
-                System.out.println(Math.min(tmp,n-tmp));
+            System.out.println(Math.min(tmp, n - tmp));
 
             T--;
         }
