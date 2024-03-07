@@ -9,16 +9,16 @@ public class p24 extends Thread {
             System.out.println(i);
             try {
                 sleep(1000);
-            }catch (Exception e)
-            {
-                System.out.println( e.getMessage());
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
 
     }
-public void Start(){
-this.run();
- }
+
+    public void Start() {
+        this.run();
+    }
 
 
     public static void main(String[] args) {

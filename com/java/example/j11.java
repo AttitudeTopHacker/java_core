@@ -56,7 +56,7 @@ public class j11 {
 //        numberToWords("0".toCharArray());
 //        numberToWords("20".toCharArray());
 //        numberToWords("1000".toCharArray());
-//        numberToWords("12345".toCharArray());
+        numberToWords("123".toCharArray());
 //        numberToWords("6348".toCharArray());
 //        numberToWords("".toCharArray());
     }

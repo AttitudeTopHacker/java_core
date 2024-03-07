@@ -22,12 +22,12 @@ public class binaryToDecimal {
 
     private static int bToD(int binaryNumber) {
         int decimal = 0;
-        int n = 0;
+        int p = 0;
         while (binaryNumber > 0) {
             int temp = binaryNumber % 10;
-            decimal += temp * (int) Math.pow(2, n);
+            decimal += temp * (int) Math.pow(2/*base*/, p);
             binaryNumber = binaryNumber / 10;
-            n++;
+            p++;
         }
         return decimal;
     }

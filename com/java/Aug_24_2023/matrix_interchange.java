@@ -14,6 +14,7 @@ public class matrix_interchange {
                 {9, 10, 11, 12, 33},
                 {13, 14, 15, 16, 44}};
         matrix.display(arr);
+        System.out.println("\n");
         for (int row = 0; row < arr.length; row++) {
             for (int col = 0; col < (arr[row].length) / 2; col++) {
                 int tmp = arr[row][col];

@@ -1,0 +1,110 @@
+class MyHashMap<K, V> {
+    static private final int DEFAULT_CAPACITY = 4;
+    static private final float LOAD_FACTOR = 0.75f;
+    private int Size = 0;
+   private LinkedList<Node>[] Buckets;
+
+    class Node {
+        private K key;
+        private V value;
+
+        public Node(K key, V value) {
+            this.value = value;
+            this.key = key;
+        }
+
+    }
+
+    public int getSizeFun() {
+        return Size;
+    }
+
+    public MyHashMap() {
+        InitialBuckets(DEFAULT_CAPACITY);
+    }
+
+    private void InitialBuckets(int Capacity) {
+        Buckets = new LinkedList[Capacity];
+        for (int i = 0; i < Capacity; i++) {
+            Buckets[i] = new LinkedList<>();
+        }
+    }
+
+    public void put(K key, V value) {
+        int bi = myHashingFun(key);
+        LinkedList<Node> CurrentBucket = Buckets[bi];
+        int ExistElementIndex = SearchIndex(key, CurrentBucket);
+        if (ExistElementIndex == -1) {
+
+            Node node = new Node(key, value);
+            CurrentBucket.add(node);
+            Size++;
+
+        } else {
+            Node node = CurrentBucket.get(ExistElementIndex);
+            node.value = value;
+        }
+        if (Size > LOAD_FACTOR * Buckets.length) {
+            ReHashing();
+        }
+    }
+
+    private void ReHashing() {
+        Size=0;
+        LinkedList<Node>[] OldBuckets = Buckets;
+        InitialBuckets((Buckets.length * 3 / 2) + 1);
+        for (LinkedList<Node> e : OldBuckets) {
+            for (Node node : e) {
+                put(node.key, node.value);
+            }
+        }
+        System.out.println(Buckets.length + " after reHashing :-");
+
+    }
+
+    public V get(K key) {
+        int index = myHashingFun(key);
+        LinkedList<Node> currenNode = Buckets[index];
+        int findIndex = SearchIndex(key, currenNode);
+        if (findIndex == -1) {
+            System.out.println("negative");
+            return null;
+        } else {
+            Node node = currenNode.get(findIndex);
+            return node.value;
+        }
+    }
+
+    private int SearchIndex(K key, LinkedList<Node> linkedList) {
+        for (int i = 0; i < linkedList.size(); i++) {
+            if (linkedList.get(i).key == key) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private int myHashingFun(K key) {
+        return (Math.abs(key.hashCode() % Buckets.length));
+    }
+
+
+}
+
+
+public class HasMapImplements {
+    public static void main(String[] args) {
+        MyHashMap<Integer, String> se = new MyHashMap<>();
+        se.put(1, "salman");
+        se.put(2, "alkab");
+        se.put(3, "arman");
+        System.out.println(se.getSizeFun());
+        se.put(4, "rahil");
+        se.put(5, "arish");
+        se.put(6, "arish");
+        System.out.println(se.getSizeFun());
+//        System.out.println(se.);
+    }
+
+}
+

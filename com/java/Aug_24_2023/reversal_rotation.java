@@ -1,5 +1,7 @@
 package com.java.Aug_24_2023;
 
+import java.util.Arrays;
+
 /**
  * create by  mohd salman
  * Date : 15/09/23
@@ -9,16 +11,14 @@ package com.java.Aug_24_2023;
 
 public class reversal_rotation {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7};
-        int k = 5;
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
+        int k = 43;
 
         int rot = k % (arr.length - 1);
         reversal_algorithm(arr, 0, (arr.length - 1));
         reversal_algorithm(arr, 0, rot - 1);
         reversal_algorithm(arr, rot, (arr.length - 1));
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
 
@@ -34,4 +34,4 @@ public class reversal_rotation {
     }
 }
 
-    
+//    [5, 6, 7, 8, 1, 2, 3, 4]

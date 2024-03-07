@@ -12,7 +12,7 @@ public class binaryToDecimal {
         String str = "1101001101";
         int num = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
-            num = num + (str.charAt(i) - '0') * (int) Math.pow(2, (str.length() - 1) - i);
+            num = num + (str.charAt(i) - '0') * (int) Math.pow(2, str.length() - 1 - i);
         }
 
         System.out.println(num);

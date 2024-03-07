@@ -10,7 +10,7 @@ public class Greatest_Common_divisor {
         a = sc.nextInt();
         b = sc.nextInt();
 
-//        System.out.println(GCDChecker(a, b));
+    System.out.println(GCDChecker(a, b));
 //        System.out.println(GCDChecker1(a, b));
         System.out.println(GCDChecker2(a, b));
 

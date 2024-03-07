@@ -1,7 +1,9 @@
 package com.java.pratice;
 
 //recurtion factorial ;
+
 import java.util.Scanner;
+
 public class p4 {
     static protected int factorial(int n) {
 

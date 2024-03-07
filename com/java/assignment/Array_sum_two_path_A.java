@@ -43,9 +43,22 @@ public class Array_sum_two_path_A {
 //                sum2 += arr2[j];
                 j++;
             } else {
+
+//                 else {
+//                    ans += Math.max(arr1sum, arr2sum);
+//                    arr1sum = 0;
+//                    arr2sum = 0;
+//                    while (arr1[i] == arr2[j] && i < m && j < n) {
+//                        ans += arr1[i];
+//                        i++;
+//                        j++;
+//                    }
+//                }
                 int sum1 = 0;
                 for (int k = s1; k <= i; k++) {
                     sum1 += arr1[k];
+
+
                 }
                 int sum2 = 0;
                 for (int k = s2; k <= j; k++) {

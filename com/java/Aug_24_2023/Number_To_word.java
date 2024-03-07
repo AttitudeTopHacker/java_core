@@ -3,7 +3,7 @@ package com.java.Aug_24_2023;
 public class Number_To_word {
     public static void main(String[] args) {
 
-        System.out.println(digitT0Word(8438043));
+        System.out.println(digitT0Word(200));
     }
 
     private static String digitT0Word(int n) {

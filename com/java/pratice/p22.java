@@ -9,7 +9,7 @@ interface OuterInterface {
 
 class p22 implements OuterInterface.InnerInterface {
     public void pasenger() {
-        System.out.println("public main privatemethod override :-");
+        System.out.println("public main private method override :-");
     }
     public static void main(String[] args) {
         p22 callObject = new p22();

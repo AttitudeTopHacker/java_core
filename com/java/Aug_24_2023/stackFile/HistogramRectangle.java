@@ -55,7 +55,6 @@ public class HistogramRectangle {
             int ans = (next[i] - pre[i] - 1) * arr[i];
             max = Math.max(ans, max);
         }
-
         return max;
     }
 }

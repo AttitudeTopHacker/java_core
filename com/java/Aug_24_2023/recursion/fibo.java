@@ -9,7 +9,7 @@ package com.java.Aug_24_2023.recursion;
 
 public class fibo {
     public static void main(String[] args) {
-        int n = 40;
+        int n = 4;
         System.out.println(fibon(n));
 
     }

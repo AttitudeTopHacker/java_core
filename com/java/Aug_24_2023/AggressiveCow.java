@@ -19,7 +19,6 @@ public class AggressiveCow {
             if (isItPossibleSitCow(mid, stall, cow)) {
                 ans = mid;
                 lo = mid + 1;
-
             } else {
                 hi = mid - 1;
             }
@@ -37,7 +36,7 @@ public class AggressiveCow {
             }
         }
 
-        return c==cow;
+        return c == cow;
     }
 
 }

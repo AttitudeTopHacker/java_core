@@ -3,8 +3,9 @@ package com.java.Aug_24_2023;
 public class Bubble_Sort {
 
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
+// Scanner scanner = new Scanner(System.in);
         int[] arr = new int[]{3, 2, 7, 1, 8};
+        
         System.out.println("array before sorted :-");
         for (int element : arr) {
             System.out.print(element + " ");

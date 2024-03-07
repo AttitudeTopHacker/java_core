@@ -27,6 +27,7 @@ public class p7 {
         String s3 = s;
 // the hashcode of s and s1 is the same
         System.out.println(hig.hashCode());
+        System.out.println(hig.hashCode());
         System.out.println(t.hashCode());
         System.out.println(s.hashCode());
         System.out.println(s3.hashCode());

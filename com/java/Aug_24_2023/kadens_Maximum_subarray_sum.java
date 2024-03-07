@@ -20,10 +20,8 @@ public class kadens_Maximum_subarray_sum {
         for (int j : arr) {
             sum += j;
             ans = Math.max(sum, ans);
-            if (sum < 0)
+            if (sum < 0)  //jab sum zero ya zero se kam  ho jaye tab sum me zero assign kro
                 sum = 0;
-
-
         }
         return ans;
     }

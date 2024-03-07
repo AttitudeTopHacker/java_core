@@ -1,5 +1,7 @@
 package com.java.Aug_24_2023;
 
+import java.util.Arrays;
+
 /**
  * create by  mohd salman
  * Date : 15/09/23
@@ -11,10 +13,8 @@ public class Product_of_Array_Except_Self {
     public static void main(String[] args) {
         int[] arr = {3, 1, 5, 2};
         int n = arr.length;
-
         int[] left = new int[n];
         int[] right = new int[n];
-
         left[0] = 1;
         right[n - 1] = 1;
         for (int i = 1; i < n; i++) {
@@ -24,8 +24,10 @@ public class Product_of_Array_Except_Self {
             right[i] = right[i + 1] * arr[i + 1];
         }
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = left[i] *right[i];
+            arr[i] = left[i] * right[i];
         }
+        System.out.println(Arrays.toString(left));
+        System.out.println(Arrays.toString(right));
         for (int j : arr) {
             System.out.println(j);
         }

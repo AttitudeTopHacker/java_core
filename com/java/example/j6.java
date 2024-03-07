@@ -1,5 +1,6 @@
 package com.java.example;
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class j6 {
@@ -14,13 +15,13 @@ public class j6 {
 
 //             method 3 ;
 //        random class use the java
-//        Random random = new Random();
-//        System.out.println( random.nextInt(50-10+1)+10);
+        Random random = new Random();
+        System.out.println( random.nextInt(80)+40);
 
 //        method 4
-        float a = ThreadLocalRandom.current().nextFloat(15,20);
-        String str = String.format("%10f",a);
-        System.out.println(a);
+//        float a = ThreadLocalRandom.current().nextFloat(15,20);
+//        String str = String.format("%15f",a);
+//        System.out.println(str);
     }
 
 }

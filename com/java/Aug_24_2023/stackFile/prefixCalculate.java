@@ -16,8 +16,8 @@ public class prefixCalculate {
         String str = "-+35/*426";
         Stack<Double> value = new Stack<>();
 
-        int i;
-        for (i = str.length() - 1; i >= 0; i--) {
+
+        for (int i = str.length() - 1; i >= 0; i--) {
             char ch = str.charAt(i);
             if (ch >= 48 && ch <= 57) {
                 value.push((double) ch - 48);

@@ -10,7 +10,6 @@ public class p3 {
         System.out.println(sc);
         int a = d.codePointAt(3);
         System.out.println((char) a);
-
     }
 
 }

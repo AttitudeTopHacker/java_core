@@ -7,11 +7,11 @@ abstract class Abstract {
     }
 }
 
-class Update extends Abstract {
-    public void display() {
-        System.out.println("arman");
-    }
-}
+//class Update extends Abstract {
+//    public void display() {
+//        System.out.println("arman");
+//    }
+//}
 
 public class p18 {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class p18 {
             }
         };
         abs.display();
-        Update up = new Update();
-        up.display();
+//        Update up = new Update();
+//        up.display();
     }
 }

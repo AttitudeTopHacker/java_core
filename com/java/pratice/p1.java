@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //array
-public class p1<T> {
+public class  p1<T> {
     static void method1() {
         int[] a = {4, 5, 6, 3, 3};
         for (int j : a) System.out.println("a[]=" + j);
@@ -58,6 +58,7 @@ public class p1<T> {
         for (int[] ints : a) {
             Arrays.stream(ints).mapToObj(anInt -> anInt + " ").forEachOrdered(System.out::print);
             System.out.println();//new line
+//            Arrays.stream(ints).mapToObj(anInt ->anInt +" ").forEachOrdered(System.out::print);      )
       /*      int j = 0;
             while (j < element.length) {
                 System.out.print(element[j] + " ");
@@ -113,7 +114,7 @@ public class p1<T> {
 
     public static void main(String[] args) {
 //        method1 +++++++++++++++++++++++++++++++++++++++++++++++++
-//        method1();
+        method1();
 //        System.out.println(" ");
 ////        method2  ++++++++++++++++++++++++++++++++++++++++++++++++
 //        method2();
@@ -140,13 +141,13 @@ public class p1<T> {
 //        methode6();
 //        System.out.println();
 //        method7  ++++++++++++++++++++++++++++++++++++++++++++++++
-//        Arrays find the class\
+//        Arrays find the class
         methode7();
 //          method8
 //        clone array in the of element
 //        methode8();
 ////        methode9
-        methode9();
+//        methode9();
 //        System.out.println();
 //        method10
 //        method10(new int[] {2, 3, 4, 5, 6, 7, 8, 9});
