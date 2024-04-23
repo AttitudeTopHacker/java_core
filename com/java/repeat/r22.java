@@ -17,18 +17,16 @@ public class r22 {
         prefix[0] = 1;
         suffix[n - 1] = 1;
         for (int i = 1; i < array.length; i++) {
-            prefix[i] = array[i-1] * prefix[i - 1];
-            suffix[n-i-1] = array[n - i ] * suffix[n -i];
+            prefix[i] = array[i - 1] * prefix[i - 1];
+            suffix[n - i - 1] = array[n - i] * suffix[n - i];
         }
         for (int i = 0; i < array.length; i++) {
-        array[i]=prefix[i]*suffix[i];
+            array[i] = prefix[i] * suffix[i];
         }
         System.out.println(Arrays.toString(prefix));
         System.out.println(Arrays.toString(suffix));
         System.out.println(Arrays.toString(array));
     }
-
-
 }
 
 

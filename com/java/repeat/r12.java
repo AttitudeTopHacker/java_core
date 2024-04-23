@@ -9,13 +9,13 @@ package com.java.repeat;
 
 public class r12 {
     public static void main(String[] args) {
-        int num = 213465;
-        int p = 1, sum = 0;
+        int num = 42135, sum = 0;
+        int v = 1;
         while (num != 0) {
-            int digit = num % 10;
-            sum = sum + p * (int) Math.pow(10, digit - 1);
-            num = num / 10;
-            p++;
+            int rem = num % 10;
+            sum = sum + v * (int) Math.pow(10, rem - 1);
+            num /= 10;
+            v++;
         }
         System.out.println(sum);
     }

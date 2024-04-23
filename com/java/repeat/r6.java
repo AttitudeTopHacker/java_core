@@ -1,7 +1,7 @@
 package com.java.repeat;
 
-import com.java.Aug_24_2023.matrix;
 
+import com.java.Aug_24_2023.program.matrix;
 
 /**
  * create by  mohd salman

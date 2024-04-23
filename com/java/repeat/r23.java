@@ -22,12 +22,12 @@ public class r23 {
         ReversalOder(arr, k, n - 1);
         System.out.println(Arrays.toString(arr));
     }
-
     private static void ReversalOder(int[] arr, int start, int last) {
         while (start < last) {
             SwapFun.swapping(arr, start, last);
             start++;
             last--;
+            
         }
 
     }

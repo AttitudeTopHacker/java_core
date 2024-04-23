@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class r21 {
     public static void main(String[] args) {
 //        int[] arr = NewArray.getArray();
-        int []arr = new int[]{1,1,1,1,1,1};
+        int []arr = new int[]{1,1,-1,1,1,1};
         System.out.println(Arrays.toString(arr));
         int[] pre = getpre(arr);
         for (int num : pre) {

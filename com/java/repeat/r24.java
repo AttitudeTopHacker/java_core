@@ -9,31 +9,34 @@ package com.java.repeat;
 
 public class r24 {
     public static void main(String[] args) {
-        int[] arr = new int[]{6, 7, 8, 9, 1, 2, 3, 4, 5,};
-//        int[] arr = new int[]{1, 1, 1, 2, 2, 3, 1};                                                                                                                 0
+//        int[] arr = new int[]{6, 7, 8, 9, 1, 2, 3, 4, 5,};
+        int[] arr = new int[]{1, 1, 1, 2, 2, 3, 1};
         int lo = 0, hi = arr.length - 1, target = 2;
         while (lo <= hi) {
             int mid = (lo + hi) / 2;
 
             if (arr[mid] == target) {
+                System.out.println(mid);
                 System.out.println(arr[mid]);
                 break;
             }
-            /*if (arr[mid] == arr[lo] && arr[mid] == arr[hi]) {
+            if (arr[mid] == arr[lo] & arr[mid] == arr[hi]) {
                 lo++;
                 hi--;
-            } else */if (arr[lo] <= arr[mid]) {
-                if (arr[lo] <= target & arr[mid] >= target) {
+            }
+            if (arr[lo] < arr[mid]) {
+                if (arr[lo] <= target && arr[mid] > target) {
                     hi = mid - 1;
                 } else {
                     lo = mid + 1;
                 }
             } else {
-                if (arr[hi] >= target && arr[mid] <= target) {
+                if (arr[mid] < target && arr[hi] >= target) {
                     lo = mid + 1;
                 } else {
                     hi = mid - 1;
                 }
+
             }
         }
 

@@ -22,11 +22,11 @@ public class pairRoses {
             }
             Arrays.sort(array);
             int M = sct.nextInt();
-            int l = 0, r = num - 1 ,i=0,j=0;
+            int l = 0, r = num - 1, i = 0, j = 0;
             while (l < r) {
                 if (array[l] + array[r] == M) {
-                    i=array[l];
-                    j=array[r];
+                    i = array[l];
+                    j = array[r];
                     l++;
                     r--;
                 } else if (array[l] + array[r] < M) {
@@ -37,12 +37,10 @@ public class pairRoses {
                 }
 
             }
-            if (i!=0){
-                System.out.println("Deepak should buy roses whose prices are " + i + " and " + j+".");
-
+            if (i != 0) {
+                System.out.println("Deepak should buy roses whose prices are " + i + " and " + j + ".");
             }
-t--;
-
+            t--;
         }
     }
 }

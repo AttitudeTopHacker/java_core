@@ -34,7 +34,6 @@ public class majority_element {
                 index = i;
             }
         }
-
         if (maxCount > n / 2)
             System.out.println(arr[index]);
 

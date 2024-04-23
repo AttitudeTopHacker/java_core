@@ -25,14 +25,12 @@ public class circularsum {
                 total += arr[i];
                 arr[i] *= (-1);
             }
-
             int secondk = kdanes(arr, N);
             int circular = total + secondk;
             System.out.println(Math.max(circular, firstk));
             T--;
         }
     }
-
 
     private static int kdanes(int[] arr, int N) {
 

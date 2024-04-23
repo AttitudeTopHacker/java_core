@@ -1,6 +1,7 @@
 package com.java.repeat;
 
-import com.java.Aug_24_2023.matrix;
+
+import com.java.Aug_24_2023.program.matrix;
 
 /**
  * create by  mohd salman
@@ -15,8 +16,6 @@ public class r16 {
                 {5, 6, 7, 8, 22,25},
                 {9, 10, 11, 12, 33,65},
                 {13, 14, 15, 16, 44,34}};
-
-
         for (int row = 0; row < arr.length; row++) {
             for (int col = 0; col < arr[row].length / 2; col++) {
                 int temp = arr[row][col];

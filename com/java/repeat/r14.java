@@ -25,7 +25,6 @@ public class r14 {
         }
         return ans;
     }
-
 }
 
     

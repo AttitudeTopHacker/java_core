@@ -17,18 +17,16 @@ public class r13 {
 
     private static int[] Inv(int[] ar, int index) {
         int[] arr = new int[ar.length];
-        if (ar.length - 1 == index) {
+        if (ar.length == index) {
             return arr;
         }
         int[] arr1 = Inv(ar, index + 1);
         for (int i = 0; i < arr1.length; i++) {
             arr[i] = arr1[i];
-
         }
-        arr[ar[index + 1]] = index + 1;
-        return arr;
+        arr[ar[index]]=index;
+    return arr;
     }
-
 }
 
     

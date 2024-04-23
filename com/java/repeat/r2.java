@@ -13,21 +13,18 @@ public class r2 {
     public static void main(String[] args) {
         int[] arr = new int[]{3, 2, 8, 6, 1, 5};
         System.out.println(Arrays.toString(arr));
-        int i = 0, j, minIndex;
-        while (i < arr.length) {
-            minIndex = i;
-            j = i + 1;
-            while (j < arr.length) {
-                if (arr[minIndex] > arr[j]) {
-                    minIndex = j;
+        int min, j;
+        for (int i = 0; i < arr.length; i++) {
+            min = i;
+            for (j = i + 1; j < arr.length; j++) {
+                if (arr[min] > arr[j]) {
+                    min = j;
                 }
-
-                j++;
             }
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-            i++;
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
+
         }
         System.out.println(Arrays.toString(arr));
     }

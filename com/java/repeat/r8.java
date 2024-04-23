@@ -19,15 +19,15 @@ public class r8 {
         while (l < r) {
             if (arr[l] % 2 == 0 && arr[r] % 2 == 1) {
                 SwapFun.swapping(arr, l, r);
-                l++; r--;
-            } else if (l % 2 == 0) {
                 l++;
-            } else if (r % 2 == 1) {
+                r--;
+            } else if (arr[l] % 2 == 1 && arr[r] % 2 == 1) {
+                l++;
+            } else {
                 r--;
             }
         }
         System.out.println(Arrays.toString(arr));
-
     }
 }
 

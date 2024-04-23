@@ -1,9 +1,5 @@
 package com.java.Feb_6_2024;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-
 /**
  * create by  mohd salman
  * Date : 10/02/24

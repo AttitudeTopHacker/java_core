@@ -1,6 +1,7 @@
 package com.java.Aug_24_2023.recursion;
 
-import com.java.Aug_24_2023.NewArray;
+
+import com.java.Aug_24_2023.program.NewArray;
 
 import java.util.Arrays;
 
