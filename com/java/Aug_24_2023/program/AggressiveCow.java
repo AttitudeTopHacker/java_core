@@ -1,5 +1,8 @@
 package com.java.Aug_24_2023.program;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * create by  mohd salman
  * Date : 13/10/23
@@ -9,11 +12,17 @@ package com.java.Aug_24_2023.program;
 
 public class AggressiveCow {
     public static void main(String[] args) {
-        int[] stall = new int[]{1, 2, 4, 8, 9};
-        int cow = 3;
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int cow = sc.nextInt();
+        int []stall = new int[N];
+        for (int i = 0; i < N; i++) {
+            stall[i] = sc.nextInt();
+        }
         int lo = stall[0];
         int hi = stall[stall.length - 1];
         int ans = -1;
+        Arrays.sort(stall);
         while (lo < hi) {
             int mid = (lo + hi) / 2;
             if (isItPossibleSitCow(mid, stall, cow)) {
@@ -27,6 +36,7 @@ public class AggressiveCow {
     }
 
     private static boolean isItPossibleSitCow(int mid, int[] stall, int cow) {
+
         int position = stall[0];
         int c = 1;
         for (int i = 1; i < stall.length; i++) {
@@ -35,6 +45,7 @@ public class AggressiveCow {
                 position = stall[i];
             }
         }
+        System.out.println(c);
 
         return c == cow;
     }

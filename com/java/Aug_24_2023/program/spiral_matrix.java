@@ -10,9 +10,9 @@ package com.java.Aug_24_2023.program;
 public class spiral_matrix {
     public static void main(String[] args) {
         int[][] arr = {{1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12},
-                {13, 14, 15, 16}};
+                       {5, 6, 7, 8},
+                      {9, 10, 11, 12},
+                     {13, 14, 15, 16}};
 
         int top = 0, left = 0, right = (arr[0].length) - 1, bottom = arr.length - 1;
 
@@ -35,8 +35,6 @@ public class spiral_matrix {
 
             for (int i = bottom; i >= top; i--) {
                 System.out.print(arr[i][left]+" ");
-
-
             }
             left++;
 

@@ -2,7 +2,7 @@ package com.java.codeAssignment.fiftAssignment;
 
 import java.util.Scanner;
 
-public class q4 {
+public class q5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String st = sc.nextLine();

@@ -40,8 +40,6 @@ public class nextpermution {
          me set kran and k indx se end tak revers karna
         */
             if (arr[k] < arr[i]) {
-                System.out.println("k = " + arr[k]);
-                System.out.println("k = " + arr[i]);
                 int tmp = arr[i];
                 arr[i] = arr[k];
                 arr[k] = tmp;

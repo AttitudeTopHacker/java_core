@@ -1,4 +1,4 @@
-package com.java.codeAssignment.secondAssignment;
+package com.java.codeAssignment.SecondAssignment;
 
 import java.util.Scanner;
 

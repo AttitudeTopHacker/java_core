@@ -1,2 +1,4 @@
-package com.java.codeAssignment.ThirdAssignment;public class q12 {
+package com.java.codeAssignment.ThirdAssignment;
+
+public class q12 {
 }

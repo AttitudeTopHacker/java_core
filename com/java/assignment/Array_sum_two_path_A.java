@@ -57,8 +57,6 @@ public class Array_sum_two_path_A {
                 int sum1 = 0;
                 for (int k = s1; k <= i; k++) {
                     sum1 += arr1[k];
-
-
                 }
                 int sum2 = 0;
                 for (int k = s2; k <= j; k++) {
