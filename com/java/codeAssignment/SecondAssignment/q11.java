@@ -41,7 +41,15 @@ public class q11 {
 //        }
 //
 //    }
+//     46343
 
+//     first digit pick  kar ke check kare ki  0 to 4 me align karti hai not invert
+//     5 to 9 ke beech align karti hai to 9 - (subtract) this pick number (9-t)
+//     any number pick kiya hua number invert karne per pick kiye hue number se bada bada hai to no invert
+//     96343
+//        invert (9-t)
+//        0to4 no invert because
+//
         String str = scn.next();
         String answer = "";
         for (int i = 0; i < str.length(); i++) {
