@@ -14,7 +14,9 @@ public class coinTos {
             System.out.println(ans);
             return;
         }
-        Tos(n - 1, ans+"H");
+        if (ans.length()==0 || ans.charAt(ans.length()-1)!='H' ) {
+            Tos(n - 1, ans + "H");
+        }
         Tos(n - 1, ans + "T");
         // the added commit line of the
     }
