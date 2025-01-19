@@ -1,13 +1,14 @@
 package com.java.lecture;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class may24_25_addition {
     public static void main(String[] args) {
         int[] arr1 = {5, 8, 9, 9, 7, 6};
         int[] arr2 = {9, 4, 7};
         int i = arr1.length - 1, j = arr2.length - 1;
-        ArrayList<Integer> list = new ArrayList<>();
+    LinkedList<Integer> list = new LinkedList<>();
         int cary = 0;
         while (i >= 0 && j >= 0) {
             int sum = arr1[i] + arr2[j] + cary;
